@@ -1,0 +1,280 @@
+@font-face {
+	font-family: "Georgia";
+	src: url("assets/fonts/Georgia-BoldItalic.eot");
+	src: local("Georgia Bold Italic"), local("Georgia-BoldItalic"),
+		url("assets/fonts/Georgia-BoldItalic.eot?#iefix") format("embedded-opentype"),
+		url("assets/fonts/Georgia-BoldItalic.woff") format("woff"),
+		url("assets/fonts/Georgia-BoldItalic.ttf") format("truetype");
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Georgia";
+	src: url("assets/fonts/Georgia-Italic.eot");
+	src: local("Georgia Italic"), local("Georgia-Italic"),
+		url("assets/fonts/Georgia-Italic.eot?#iefix") format("embedded-opentype"),
+		url("assets/fonts/Georgia-Italic.woff") format("woff"),
+		url("assets/fonts/Georgia-Italic.ttf") format("truetype");
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Georgia";
+	src: url("assets/fonts/Georgia-Bold.eot");
+	src: local("Georgia Bold"), local("Georgia-Bold"),
+		url("assets/fonts/Georgia-Bold.eot?#iefix") format("embedded-opentype"),
+		url("assets/fonts/Georgia-Bold.woff") format("woff"),
+		url("assets/fonts/Georgia-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Georgia";
+	src: url("assets/fonts/Georgia.eot");
+	src: local("Georgia"),
+		url("assets/fonts/Georgia.eot?#iefix") format("embedded-opentype"),
+		url("assets/fonts/Georgia.woff") format("woff"),
+		url("assets/fonts/Georgia.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	margin: 0;
+	padding: 5px 0;
+}
+
+body * {
+	font-family: "Georgia", "Arial Black";	
+}
+
+.width-60 {
+	width: 60%;
+	margin: auto;
+}
+
+.reset {
+	border: none;
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.text-logo {
+	font-size: 44px;
+	text-align: center;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-italic {
+	font-style: italic;
+}
+
+.font-bold {
+	font-weight: bold;
+}
+
+.color-green {
+	color: #183d32;
+}
+
+.border-bottom {
+    border-bottom: 3px solid #465652;
+    width: 100%;
+}
+
+.block {
+	display: block;
+	margin: 0;
+}
+
+.header .block img {
+	display: block;
+}
+
+img {
+	margin: 0;
+}
+
+.flex-align {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+li {
+	list-style-type: none;
+}
+
+.menu-list {
+	padding: 15px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 60%;
+	margin: auto;
+}
+
+.header-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 130px;
+}
+
+.menu-item a{
+	text-decoration: underline;
+	color: #183d32;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+
+.header-item img {
+	width: 168px;
+}
+
+.margin-left {
+	margin-left: 130px;
+}
+
+.menu-active {
+	text-decoration: none;
+	color: #4b0082;
+}
+
+.hamburger {
+    display: none;
+}
+
+table {
+	border-spacing: 10px;
+}
+
+#col6 {
+	width: 40%;
+	text-align: left;
+	border: 0px;	
+}
+
+#col7 {
+	width: 60%;
+	text-align: left;
+	border: 0px;
+	vertical-align: top;	
+}
+
+#tab4 {
+	width: 100%;
+	text-align: center;
+	border: 0px;
+}
+
+td {
+    border: 1px double black;    
+}
+
+#div1 {
+	width: 100%;
+	padding: 0px;
+	border: 0px solid black;
+	background: #ffffff;
+	margin: auto;
+}
+
+#div2 {
+	padding: 0px;
+	border: 0px solid black;
+	background: #ffffff;
+	margin: auto;
+}
+
+#div3 {
+	float: left;
+}
+
+#feedback-form {
+	max-width: 400px;
+	padding: 2%;
+	border-radius: 3px;
+	background: #f1f1f1;
+}
+
+#feedback-form #nameFF, #contactFF, #messageFF {
+	width: 100%;
+	box-sizing: border-box;
+	margin: 2px 0 2% 0;
+	padding: 2%;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+	box-shadow: 0 1px 2px -1px rgba(0, 0, 0, 0.2) inset, 0 0 transparent;
+}
+
+#feedback-form #nameFF, #contactFF, #messageFF:hover {
+	border-color: #7eb4ea;
+	box-shadow: 0 1px 2px -1px rgba(0, 0, 0, 0.2) inset, 0 0 transparent;
+}
+
+#feedback-form #nameFF, #contactFF, #messageFF:focus { 
+	outline: none;
+	border-color: #7eb4ea;
+	box-shadow: 0 1px 2px -1px rgba(0, 0, 0, 0.2) inset,
+		0 0 4px rgba(35, 146, 243, 0.5);
+	transition: 0.2s linear;
+}
+
+#feedback-form [type="submit"] {
+	margin-top: 4px;
+	padding: 2% 10px;
+	border: none;
+	border-radius: 3px;
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2) inset;
+	background: #669acc;
+	color: #fff;
+}
+
+#feedback-form [type="submit"]:hover {
+	background: #5c90c2;
+}
+
+#feedback-form [type="submit"]:focus {
+	box-shadow: 0 1px 1px #fff, inset 0 1px 2px rgba(0, 0, 0, 0.8),
+		inset 0 -1px 0 rgba(0, 0, 0, 0.05);
+}
+
+.github {
+	margin-top: 50px;
+	display: block;
+	text-align: center;
+}
+
+.github a {
+	background: #3a7999;
+	color: #f2f2f2;
+	padding: 10px;
+	font-size: 18px;
+	border-radius: 10px;
+}
+
+.github a:hover {
+	background: rgba(0, 0, 0, 0);
+	color: #3a7999;
+	box-shadow: inset 0 0 0 3px #3a7999;
+}
+
